@@ -1,0 +1,93 @@
+.dashboard{
+    &__info{
+        // @include respond(mobile){
+        //    justify-content: center;
+        // }
+
+        padding: 6%;
+        @include respond(mobile){
+            padding: 0;
+        }
+        background-color: #4b8a98;
+        display: flex;
+        &--user{
+            margin: 0 auto;
+            display: flex;
+            flex:0 0 80%;
+            @include respond(big-mobile){
+                margin-left: 10rem;
+            }
+            @include respond(mobile){
+                flex: 1 0 100%;
+            }
+            flex-wrap: wrap;
+            &--circle{
+                margin-right: 1rem;
+                @include respond(mobile){
+                    margin-right: 0;
+                }
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                    border-radius: 50%;
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #84142d;
+                color: #cab93f;
+                font-size: 2.5rem;
+                height: 30rem;
+                width: 30rem;
+                border-radius: 50%;
+                padding: 5%;
+            }
+        }
+    }
+    &__buttons{
+        @include respond(mobile){
+            height: 100vh;
+        }
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10rem !important;
+        height: 30rem;
+        padding: 5%;
+        background-color: #d8c962;
+        margin-top: 1px solid white;
+
+        &--notification{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 4.2rem;
+            width: 4.2rem;
+            border-radius: 50%;
+            background-color: #752d2d;
+            font-size: 2.7rem;
+            position: absolute;
+            right: 61rem;
+            top: 10.2rem;
+            @include respond(tab-land){
+                right: 54rem;
+            }
+            @include respond(tab-port){
+                right: 41rem;
+            }
+            @include respond(big-mobile){
+                top:30%;
+                right: 40rem;
+            }
+            @include respond(mobile){
+                top: 36%;
+                right: 24rem;
+            }
+        }
+    }
+}
+.userCarouselImage{
+    height: 40rem;
+    width: 30rem !important;
+}
