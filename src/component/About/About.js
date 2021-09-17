@@ -8,7 +8,7 @@ class About extends Component {
                 <section className="itemAbout">
                     <div className="itemAbout__info">
                         <div className="itemAbout__info--image">
-                            <img className="itemAbout__info--image-pic" src="https://cdn.mos.cms.futurecdn.net/ibovmWt9ud5UTETr9t4XcM.jpg" />
+                            <img className="itemAbout__info--image-pic" src="https://cdn.mos.cms.futurecdn.net/ibovmWt9ud5UTETr9t4XcM.jpg" alt="item"/>
                         </div>
                         <div className="itemAbout__info--allinfo">
                             <div>
